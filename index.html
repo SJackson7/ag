@@ -1,5 +1,6 @@
 <html lang="en-us">
-  <head>
+
+<head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,72 +8,117 @@
 
     <title>Weather Visualization Dashboard</title>
 
-    <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
 
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="css/styles.css" media="screen">
 
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Start of navbar -->
     <nav class="navbar navbar-default">
-      <div class="container-fluid navbar-custom">
+        <div class="container-fluid navbar-custom">
 
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="row">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
-              <span class="sr-only">Toggle Navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="#" id="logo">Weather</a>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="col-xs-9 phone-nav">
+                        <a class="navbar-brand" href="#" id="logo">Weather</a>
+                    </div>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="visualizations/temp.html">Max Temperature</a></li>
+                                <li><a href="visualizations/humidity.html">Humidity</a></li>
+                                <li><a href="visualizations/cloud_cover.html">Cloudiness</a></li>
+                                <li><a href="visualizations/wind.html">Wind Speed</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="visualizations/comparison.html">Comparison</a></li>
+                        <li><a href="visualizations/data.html">Data</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
             </div>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right navbar-right-custom">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                 <li><a href="temp.html">Max Temperature</a></li>
-                  <li><a href="humidity.html">Humidity</a></li>
-                  <li><a href="cloud_cover.html">Cloudiness</a></li>
-                  <li><a href="wind.html">Wind Speed</a></li>
-                </ul>
-              </li>
-              <li><a href="comparison.html">Comparison</a></li>
-              <li><a href="data.html">Data</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div>
-      </div><!-- /.container-fluid -->
+        </div><!-- /.container-fluid -->
     </nav>
     <!-- End of navbar -->
 
     <!-- Start of container -->
-   
+    <div class="container">
+        <div class="row">
+            <div class="summaryimage">
+                <!-- Left box  -->
+                <div class="box">
+                    <h3 class="title">Summary: Latitude Versus...</h3>
+                    <hr>
+                    <img src="assests/LATvTEMP.png" class="vizualization rounded float-left"
+                        alt="Max Temperature Graph">
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="visimageindex">
+                <div class="box">
+                    <h5 class="title">Visualizations</h5>
+                    <hr>
+                    <div class="container">
+                        <div class="row" style="padding-bottom: 30px;">
+                            <a href="visualizations/temp.html">
+                                <img class="panel" src="assests/LATvTEMP.png" alt="Max Temperature Graph">
+                            </a>
+                        </div>
+                            <a href="humid.html">
+                                <img class="panel" src="assests/LATvHUM.png" alt="Humidity Graph">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 30px;">
+                        <a href="clouds.html">
+                            <img class="panel" src="assests/LATvCLD.png" alt="Cloudiness Graph">
+                        </a>
+                    </div>
+                    <a href="wind_speed.html">
+                        <img class="panel" src="assests/LATvWND.png" alt="Wind Speed Graph">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- End of container -->
 
     <!-- Start of footer -->
     <footer class="footer navbar-fixed-bottom">
-      <div class="two-toned-footer-color"></div>
-      <p class="text-muted text-muted-footer text-center">
-        <b>&copy; Copyright Coding Bootcamp 2021</b>
-      </p>
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+            <b>&copy; Copyright &copy; Stephen Jackson 2021</b>
+        </p>
     </footer>
     <!-- End of footer -->
 
     <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
 
     <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
 
 </html>

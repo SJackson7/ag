@@ -12,7 +12,7 @@ body {
   margin-bottom: 150px;
 
   /* Typography */
-  font-family: "Andale Mono", monospace;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
   /* Visual */
   background-color: #ededed;
@@ -25,6 +25,13 @@ body {
     /* Visual */
     background-color: #fff;
   }
+}
+
+/* Table */
+.table{
+  font-size: 14px; 
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border-top-color: white; 
 }
 
 /* ----DEFAULT ELEMENT STYLING END---- */
@@ -42,7 +49,7 @@ body {
 
   /* Positioning */
   margin-left: 70px;
-  font-family: "Andale Mono", monospace;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
   /* Typography */
   font-size: 24px;
@@ -90,7 +97,7 @@ body {
 
     /* Positioning */
     margin-left: 0;
-    font-family: Georgia, Times, "Times New Roman", serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
     /* Typography */
     font-size: 24px;
@@ -108,7 +115,7 @@ body {
 .description-header {
   /* Positioning */
   margin-bottom: 33px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
   /* Typography */
   font-size: 32px;
@@ -184,7 +191,7 @@ body {
 .imageNav-header {
   /* Positioning */
   margin-bottom: 15px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
   /* Typography */
   font-size: 25px;
@@ -209,12 +216,28 @@ body {
   border: 2px solid #4aaaa5;
 }
 
-#images {
+#summaryimage {
   /* Box-model */
   padding-top: 15px;
 
   /* Typography */
   text-align: center;
+}
+.vizualization{
+  width:25%;
+  height:25%;
+}
+
+#visimageindex {
+  /* Box-model */
+  padding-top: 15px;
+
+  /* Typography */
+  text-align: center;
+}
+.vizualization{
+  width:50%;
+  height:50%;
 }
 
 /* ----IMAGE NAV END---- */
@@ -227,7 +250,7 @@ body {
 .comparison-header {
   /* Positioning */
   margin-bottom: 10px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
   /* Typography */
   font-size: 20px;
