@@ -20,6 +20,8 @@
 
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="../css/styles.css" media="screen">
+    <link rel="stylesheet" href="../css/weather-icons.css" media="screen">
+
 
 </head>
 
@@ -28,7 +30,7 @@
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img src="../assests/icons/3780931.png" alt="" width="32" height="32"
@@ -54,8 +56,14 @@
                             Comparisons
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark dropdown-center">
-                            <li><a class="dropdown-item" href="comparison_lat.html">By Latitude</a></li>
-                            <li><a class="dropdown-iteme" href="comparison_lat.html">By Location</a></li>
+                            <li><a class="dropdown-item" href="comparison_lat.html"><img
+                                        src="../assests/icons/earth-america.svg" alt="" width="20" height="20"
+                                        class="d-inline-block align-text-center">
+                                    By Latitude</a></li>
+                            <li><a class="dropdown-item" href="comparison_loc.html"><img
+                                        src="../assests/icons/position-marker.svg" alt="" width="20" height="20"
+                                        class="d-inline-block align-text-center">
+                                    By Location</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown ac">
@@ -64,11 +72,14 @@
                             Visualizations
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark dropdown-center">
-                            <li><a class="dropdown-item" href="temp.html">Max Temperature</a></li>
-                            <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
-                            <li><a class="dropdown-item active" href="cloud_cover.html">Cloud Cover</a>
-                            </li>
-                            <li><a class="dropdown-item" href="wind.html">Wind Speed</a></li>
+                            <li><a class="dropdown-item" href="temp.html"><i class="wi wi-thermometer"></i> Max
+                                    Temperature</a></li>
+                            <li><a class="dropdown-item" href="humidity.html"><i class="wi wi-humidity"></i>
+                                    Humidity</a></li>
+                            <li><a class="dropdown-item active" href="cloud_cover.html"><i class="wi wi-day-cloudy"></i>
+                                    Cloud Cover</a></li>
+                            <li><a class="dropdown-item" href="wind.html"><i class="wi wi-cloudy-gusts"></i> Wind
+                                    Speed</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -83,7 +94,7 @@
                 <div class="col-md-9 col-md-7">
                     <div class="box">
                         <div class="header">
-                            <h1 class="text-secondary">Cloud Cover</h1>
+                            <h1 class="text-secondary"><i class="wi wi-day-cloudy"></i> Cloud Cover</h1>
                             <hr class="light">
                         </div>
                         <div class="content">
@@ -92,7 +103,7 @@
                                     <img src="../assests/LATvCLD.png" alt="cloud cover by lat" style="width:100%">
                                 </div>
                                 <div class="column">
-                                    <img src="../assests/LOCvCLD.png" alt="cloud cover by locations" style="width:100%">
+                                    <img src="../assests/LOCvCLD.png" alt="cloud cover by location" style="width:100%">
                                 </div>
                             </div>
                             <p class="text-tertiary">As was the case for humidity, plotting overall city latitude did
@@ -122,13 +133,16 @@
                                 <div class="row padding">
                                     <div class="row">
                                         <div class="column_three">
-                                            <a href="temp.html"><img src="../assests/LATvTEMP.png" class="img-fluid" alt="Max Temperature"></a>
+                                            <a href="temp.html"><img src="../assests/LATvTEMP.png" class="img-fluid"
+                                                    alt="Max Temperature"></a>
                                         </div>
                                         <div class="column_three">
-                                            <a href="humidity.html"><img src="../assests/LATvHUM.png" class="img-fluid" alt="Humidity"></a>
+                                            <a href="humidity.html"><img src="../assests/LATvHUM.png" class="img-fluid"
+                                                    alt="Humidity"></a>
                                         </div>
                                         <div class="column_three">
-                                            <a href="wind.html"><img src="../assests/LATvWND.png" class="img-fluid" alt="Wind"></a>
+                                            <a href="wind.html"><img src="../assests/LATvWND.png" class="img-fluid"
+                                                    alt="Wind"></a>
                                         </div>
                                     </div>
 

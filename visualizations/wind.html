@@ -1,0 +1,165 @@
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Weather Visualization Dashboard</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Audiowide|Share+Tech+Mono">
+
+    <!-- Bootstrap Iconsheet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="../css/styles.css" media="screen">
+    <link rel="stylesheet" href="../css/weather-icons.css" media="screen">
+
+</head>
+
+<body>
+    <!-- Start of navbar -->
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assests/icons/3780931.png" alt="" width="32" height="32"
+                    class="d-inline-block align-text-top">
+                WX Dashboard
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Comparisons
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-center">
+                            <li><a class="dropdown-item" href="comparison_lat.html"><img
+                                        src="../assests/icons/earth-america.svg" alt="" width="20" height="20"
+                                        class="d-inline-block align-text-center">
+                                    By Latitude</a></li>
+                            <li><a class="dropdown-item" href="comparison_loc.html"><img
+                                        src="../assests/icons/position-marker.svg" alt="" width="20" height="20"
+                                        class="d-inline-block align-text-center">
+                                    By Location</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ac">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Visualizations
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-center">
+                            <li><a class="dropdown-item" href="temp.html"><i class="wi wi-thermometer"></i> Max
+                                    Temperature</a></li>
+                            <li><a class="dropdown-item" href="humidity.html"><i class="wi wi-humidity"></i>
+                                    Humidity</a></li>
+                            <li><a class="dropdown-item" href="cloud_cover.html"><i class="wi wi-day-cloudy"></i> Cloud
+                                    Cover</a></li>
+                            <li><a class="dropdown-item active" href="wind.html"><i class="wi wi-cloudy-gusts"></i> Wind
+                                    Speed</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Start of container -->
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9 col-md-7">
+                    <div class="box">
+                        <div class="header">
+                            <h1 class="text-secondary"><i class="wi wi-cloudy-gusts"></i> Wind Speed</h1>
+                            <hr class="light">
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="column">
+                                    <img src="../assests/LATvWND.png" alt="wind by lat" style="width:100%">
+                                </div>
+                                <div class="column">
+                                    <img src="../assests/LOCvWND.png" alt="wind by locations" style="width:100%">
+                                </div>
+                            </div>
+                            <p class="text-tertiary">Plotting wind by overall city latitude or by location did not
+                                reveal any particular pattern. Most likely, the reason for
+                                the cluster of data points is that most locations were not experiencing windy days.
+                                There are some locations shown on the right image where the
+                                wind speed exceeds 20 mph and in few cases 30 mph, but one could attribute that to a
+                                storm or moving front. Additionally, most coastal locations
+                                did not have any strog wind speeds.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                    <div class="box">
+                        <div class="header">
+                            <h1 class="text-secondary">Additional Visualizations</h1>
+                            <hr class="light">
+                        </div>
+                        <div class="content-fluid">
+                            <div>
+                                <div class="row padding">
+                                    <div class="row">
+                                        <div class="column_three">
+                                            <a href="temp.html"><img src="../assests/LATvTEMP.png" class="img-fluid"
+                                                    alt="Max Temperature"></a>
+                                        </div>
+                                        <div class="column_three">
+                                            <a href="cloud_cover.html"><img src="../assests/LATvHUM.png"
+                                                    class="img-fluid" alt="Humidity"></a>
+                                        </div>
+                                        <div class="column_three">
+                                            <a href="wind.html"><img src="../assests/LATvCLD.png" class="img-fluid"
+                                                    alt="Cloud Cover"></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- End of container -->
+
+    <!-- jQuery CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</body>
+
+</html>

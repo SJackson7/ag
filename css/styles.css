@@ -2,6 +2,7 @@
 html {
   /* Positioning */
   position: relative;
+  scroll-padding-top: 100px;
 
   /* Box-model */
   min-height: 100%;
@@ -25,9 +26,6 @@ body {
     background-color: #797979;
   }
 }
-
-/* ----DEFAULT ELEMENT STYLING END---- */
-
 
 
 #logo {
@@ -74,27 +72,6 @@ body {
 @media only screen and (max-width: 767px) {
   .navbar-header {
     background-color: #4aaaa5;
-  }
-
-  #logo {
-    width: 100%;
-
-    /* Box-model */
-    height: 60px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-
-    /* Positioning */
-    margin-left: 0;
-    font-family: Georgia, Times, "Times New Roman", serif;
-
-    /* Typography */
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-
-    /* Visual */
-    background: #4aaaa5;
   }
 }
 
@@ -163,68 +140,7 @@ body {
 
 /* ----DESCRIPTION END---- */
 
-/* ----IMAGE NAV START---- */
-#imageNav-area {
-  width: 100%;
 
-  /* Box-model */
-  padding: 30px 30px 43px;
-
-  /* Positioning */
-  margin-top: 32px;
-
-  /* Visual */
-  background-color: #fff;
-}
-
-.imageNav-header {
-  /* Positioning */
-  margin-bottom: 15px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-
-  /* Typography */
-  font-size: 25px;
-  font-weight: bold;
-  color: #4aaaa5;
-}
-
-.imageNav-photo {
-  width: 140px;
-
-  /* Box-model */
-  height: 140px;
-}
-
-.imageNav-photo:hover {
-  /* Visuals */
-  opacity: 0.6;
-}
-
-.imageNav-photo.active {
-  /* Visuals */
-  border: 2px solid #4aaaa5;
-}
-
-
-
-/* ----IMAGE NAV END---- */
-
-/* ----COMPARISON START---- */
-.comparison-image:hover {
-  opacity: 0.6;
-}
-
-.comparison-header {
-  /* Positioning */
-  margin-bottom: 10px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-
-  /* Typography */
-  font-size: 20px;
-  font-weight: bold;
-  color: #4aaaa5;
-  text-align: center;
-}
 
  /* new CSS 5.2.0 */
  /* allow side-by-side images for indiv visuals*/

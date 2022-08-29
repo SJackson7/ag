@@ -20,6 +20,7 @@
 
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="css/styles.css" media="screen">
+    <link rel="stylesheet" href="css/weather-icons.css" media="screen">
 
 </head>
 
@@ -28,7 +29,7 @@
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="assests/icons/3780931.png" alt="" width="32" height="32"
@@ -54,8 +55,14 @@
                             Comparisons
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark dropdown-center">
-                            <li><a class="dropdown-item" href="visualizations/comparison_lat.html">By Latitude</a></li>
-                            <li><a class="dropdown-item" href="visualizations/comparison_lat.html">By Location</a></li>
+                            <li><a class="dropdown-item" href="visualizations/comparison_lat.html"><img
+                                        src="assests/icons/earth-america.svg" alt="" width="20" height="20"
+                                        class="d-inline-block align-text-center">
+                                    By Latitude</a></li>
+                            <li><a class="dropdown-item" href="visualizations/comparison_loc.html"><img
+                                        src="assests/icons/position-marker.svg" alt="" width="20" height="20"
+                                        class="d-inline-block align-text-center">
+                                    By Location</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -64,10 +71,14 @@
                             Visualizations
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark dropdown-center">
-                            <li><a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a></li>
-                            <li><a class="dropdown-item" href="visualizations/humidity.html">Humidity</a></li>
-                            <li><a class="dropdown-item" href="visualizations/cloud_cover.html">Cloud Cover</a></li>
-                            <li><a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a></li>
+                            <li><a class="dropdown-item" href="visualizations/temp.html"><i
+                                        class="wi wi-thermometer"></i> Max Temperature</a></li>
+                            <li><a class="dropdown-item" href="visualizations/humidity.html"><i
+                                        class="wi wi-humidity"></i> Humidity</a></li>
+                            <li><a class="dropdown-item" href="visualizations/cloud_cover.html"><i
+                                        class="wi wi-day-cloudy"></i> Cloud Cover</a></li>
+                            <li><a class="dropdown-item" href="visualizations/wind.html"><i
+                                        class="wi wi-cloudy-gusts"></i> Wind Speed</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -88,14 +99,19 @@
                         </div>
                         <div class="content" id="imagep">
                             <img src="assests/heatmap.png" class="rounded mx-auto d-block img-fluid" alt="Heatmap">
-                            <p class="text-tertiary">For the weather analysis, 594 cities from around the world were selected where I examined the following relationships 
-                                to the city's latitude: Temperature (°F), Humidity (%), Cloud Cover (%), and Wind Speed (mph). Iobtained the weather data from 
-                                OpenWeatherMap API as of July 26, 2022, at 10:33:33 AM. I've included my observations for each section as well as a CSV file of the pulled 
-                                city data and chart images for the above relationships by overall latitude, city coordinates (by latitude and longitude), northern 
+                            <p class="text-tertiary">For the weather analysis, 594 cities from around the world were
+                                selected where I examined the following relationships
+                                to the city's latitude: Temperature (°F), Humidity (%), Cloud Cover (%), and Wind Speed
+                                (mph). Iobtained the weather data from
+                                OpenWeatherMap API as of July 26, 2022, at 10:33:33 AM. I've included my observations
+                                for each section as well as a CSV file of the pulled
+                                city data and chart images for the above relationships by overall latitude, city
+                                coordinates (by latitude and longitude), northern
                                 hemisphere by latitude and southern hemisphere by latitude.<br>
                             </p>
-                            <p class="text-tertiary">This Weather Dashboard allows you to view the resulting data and conclusions. Simply use the navigation bar at the top 
-                              of this page, or click one of the images to the right.</p>
+                            <p class="text-tertiary">This Weather Dashboard allows you to view the resulting data and
+                                conclusions. Simply use the navigation bar at the top
+                                of this page, or click one of the images to the right.</p>
                         </div>
                     </div>
                 </div>
@@ -109,20 +125,20 @@
                             <div>
                                 <div class="row padding">
                                     <div class="col-6">
-                                        <a href="visualizations/temp.html"><img src="assests/LATvTEMP.png" class="img-fluid"
-                                                alt="Max Temperature"></a>
+                                        <a href="visualizations/temp.html"><img src="assests/LATvTEMP.png"
+                                                class="img-fluid" alt="Max Temperature"></a>
                                     </div>
                                     <div class="col-6">
-                                        <a href="visualizations/humidity.html"><img src="assests/LATvHUM.png" class="img-fluid"
-                                                alt="Humidity"></a>
+                                        <a href="visualizations/humidity.html"><img src="assests/LATvHUM.png"
+                                                class="img-fluid" alt="Humidity"></a>
                                     </div>
                                     <div class="col-6">
-                                        <a href="visualizations/cloud_cover.html"><img src="assests/LATvCLD.png" class="img-fluid"
-                                                alt="Cloud Cover"></a>
+                                        <a href="visualizations/cloud_cover.html"><img src="assests/LATvCLD.png"
+                                                class="img-fluid" alt="Cloud Cover"></a>
                                     </div>
                                     <div class="col-6">
-                                        <a href="visualizations/wind.html"><img src="assests/LATvWND.png" class="img-fluid"
-                                                alt="Wind Speed"></a>
+                                        <a href="visualizations/wind.html"><img src="assests/LATvWND.png"
+                                                class="img-fluid" alt="Wind Speed"></a>
                                     </div>
 
                                 </div>
