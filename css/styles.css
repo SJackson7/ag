@@ -28,10 +28,7 @@ body {
 
 /* ----DEFAULT ELEMENT STYLING END---- */
 
-/* ----NAV START---- */
-.navbar-custom {
-  background-color: #276ea0;
-}
+
 
 #logo {
   /* Box-model */
@@ -208,13 +205,7 @@ body {
   border: 2px solid #4aaaa5;
 }
 
-#images {
-  /* Box-model */
-  padding-top: 15px;
 
-  /* Typography */
-  text-align: center;
-}
 
 /* ----IMAGE NAV END---- */
 
@@ -238,6 +229,7 @@ body {
 .text-secondary {
     /* Positioning */
     margin-bottom: -15px;
+    padding-left: 15px;
     font-family: 'Audiowide', sans-serif;
   
     /* Typography */
@@ -245,6 +237,17 @@ body {
     font-weight: bold;
     color: #4aaaa5;
     text-align: left;
+}
+
+.text-tertiary {
+  /* Positioning */
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 15px;
+
+  /* Typography */
+  font-size: 16px;
+  color: #000;
+  text-align: left;
 }
 /* ----COMPARISON END---- */
 
