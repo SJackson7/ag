@@ -226,6 +226,21 @@ body {
   text-align: center;
 }
 
+ /* new CSS 5.2.0 */
+ /* allow side-by-side images for indiv visuals*/
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50.00%;
+  padding: 5px;
+}
+.column_three {
+  flex: 33.33%;
+  padding: 5px;
+}
+
 .text-secondary {
     /* Positioning */
     margin-bottom: -15px;
