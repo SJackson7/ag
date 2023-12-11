@@ -1,0 +1,6 @@
+#map-container {
+    width: 400px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    background-image: url('E:\dnd4e\testcode\assets\Map.png'); /* Replace with your image path */
+    background-size: cover;
+}
